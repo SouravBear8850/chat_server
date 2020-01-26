@@ -8,7 +8,7 @@ client_socket.connect(('127.0.0.2',port))
 recv_msg=client_socket.recv(1024)
 print(recv_msg)
 
-send_msg= input("Enter your user name(prefix with #:")
+send_msg= raw_input("Enter your user name(prefix with #:")
 client_socket.send(send_msg)
 
 
